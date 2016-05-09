@@ -21,7 +21,7 @@ int main(int argc, char** argv )
         return -1;
     }
 
-    resize(src(Rect(200, 200, 100, 100)), dst, Size(), 10.0, 10.0, INTER_NEAREST);
+    resize(src(Rect(200.5, 200.5, 100, 100)), dst, Size(), 10.0, 10.0, INTER_NEAREST);
 
     try {
         imwrite(argv[2], dst);
